@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ozed Interiors Products</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+/* header */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;background:#0f0f0f;color:white}
+header{padding:20px 50px;display:flex;justify-content:space-between;align-items:center;background:black;border-bottom:1px solid rgba(255,255,255,.1)}
+nav a{color:white;margin-left:20px;text-decoration:none}
+nav a:hover{color:#d4af37}
+</style>
+</head>
+<body>
+<header><div class="logo"><img src="assets/logo/logo.png" alt="Ozed Logo" style="width:60px;height:60px;border-radius:50%"><h2 style="color:#d4af37;font-family:'Playfair Display',serif">OzedInteriors</h2></div>
+<nav id="navMenu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="products.html">Shop</a><a href="mailto:ozedexclusiveinteriorconcepts@gmail.com">Contact Us</a></nav>
+</header>
+
+<style>
+/* products page styles moved from original head */
+.hero{text-align:center;padding:50px 20px}
+.hero h1{font-family:'Playfair Display',serif;font-size:45px;color:#d4af37}
+.hero p{margin-top:15px;color:#ccc}
+.products{padding:50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.card{background:#1a1a1a;padding:20px;border-radius:15px;transition:.5s;text-align:center}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:250px;object-fit:cover;border-radius:10px}
+.card h2{margin-top:15px;color:#d4af37}
+.price{font-size:22px;margin:15px 0;font-weight:bold}
+.btn{display:inline-block;padding:12px 25px;background:#25D366;color:white;text-decoration:none;border-radius:50px;font-weight:bold}
+@media(max-width:768px){.products{padding:20px}}
+</style>
+
+<section class="hero">
+<h1>Our Products</h1>
+<p>Premium interior designs crafted for elegance and comfort</p>
+</section>
+
+<section class="products">
+
+<div class="card"><img src="assets/images/curtains.png"><h2>Luxury Curtains</h2><p class="price">₦38,500</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Luxury%20Curtains%20for%20₦38,500">Order on WhatsApp</a></div>
+
+<div class="card"><img src="assets/images/blinds.png"><h2>Window Blinds</h2><p class="price">₦28,500</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Window%20Blinds%20for%20₦28,500">Order on WhatsApp</a></div>
+
+<div class="card"><img src="assets/images/wallpaper.png"><h2>Premium Wallpaper</h2><p class="price">₦8,000</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Premium%20Wallpaper%20for%20₦8,000">Order on WhatsApp</a></div>
+
+<div class="card"><img src="assets/images/curtain2.png"><h2>Luxury Curtains</h2><p class="price">₦15,500</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Luxury%20Curtains%20for%20₦15,500">Order on WhatsApp</a></div>
+
+<div class="card"><img src="assets/images/blind2.jpg"><h2>Window Blinds</h2><p class="price">₦28,500</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Window%20Blinds%20for%20₦28,500">Order on WhatsApp</a></div>
+
+<div class="card"><img src="assets/images/wallpaper2.jpg"><h2>Premium Wallpaper</h2><p class="price">₦8,000</p><a class="btn" href="https://wa.me/2348147147493?text=Hello%20Ozed%20Interiors,%20I%20want%20to%20order%20Premium%20Wallpaper%20for%20₦8,000">Order on WhatsApp</a></div>
+
+</section>
+
+<footer style="background:#000;padding:40px;color:#ddd;margin-top:40px">
+<div style="max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px">
+<div><h3 style="color:#d4af37">Ozed Interiors</h3><p>Luxury interior designs crafted with elegance, creativity and comfort.</p></div>
+<div><h3 style="color:#d4af37">Quick Links</h3><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="services.html">Services</a><br><a href="shop.html">Shop</a></div>
+<div><h3 style="color:#d4af37">Contact</h3><p>📞 08147147493</p><p>📍 Owerri, Imo State</p><p>✉ info@ozedinteriors.com</p></div>
+</div>
+<div style="text-align:center;margin-top:20px;color:#ddd">© 2026 Ozed Exclusive Interior Concepts | All Rights Reserved</div>
+</footer>
+
+</body>
+</html>

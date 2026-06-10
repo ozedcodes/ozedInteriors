@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Ozed Exclusive Interior Concepts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+/* header styles */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d0d0d;font-family:'Montserrat',sans-serif;color:white;overflow-x:hidden}
+header{padding:20px 50px;display:flex;justify-content:space-between;align-items:center;background:black;border-bottom:1px solid rgba(255,255,255,.1)}
+.logo img{width:60px;height:60px;border-radius:50%;overflow:hidden}
+nav a{color:white;text-decoration:none;margin-left:20px;transition:.4s}
+nav a:hover{color:#d4af37}
+.menu-icon{display:none}
+@media(max-width:768px){header{flex-direction:column}}
+</style>
+
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="assets/logo/logo.png" alt="Ozed Logo">
+<h2 style="color:#d4af37;font-family:'Playfair Display',serif">OzedInteriors</h2>
+</div>
+<div class="menu-icon"><i class="fas fa-bars"></i></div>
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="products.html">Shop</a>
+<a href="mailto:ozedexclusiveinteriorconcepts@gmail.com">Contact Us</a>
+</nav>
+</header>
+
+<style>
+/* about page styles */
+.about-hero{height:50vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:20px;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8))}
+.about-hero h1{font-size:55px;font-family:'Playfair Display',serif;color:#d4af37}
+.about-container{padding:80px}
+.story{display:flex;gap:40px;align-items:center;margin-bottom:80px;opacity:0;transform:translateY(50px);transition:1s}
+.story.active{opacity:1;transform:translateY(0)}
+.story img{width:45%;border-radius:10px}
+.story-content{width:55%}
+.story-content h2{font-size:38px;color:#d4af37;margin-bottom:20px;font-family:'Playfair Display', serif}
+.story-content p{line-height:1.8;font-size:16px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;opacity:0;transform:translateY(50px);transition:1s}
+.values.active{opacity:1;transform:translateY(0)}
+.card{background:#161616;padding:30px;text-align:center;border-radius:15px;transition:.5s}
+.card:hover{transform:translateY(-10px);border:1px solid #d4af37}
+.card i{font-size:35px;color:#d4af37;margin-bottom:15px}
+.card h3{margin-bottom:15px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px;border-radius:50%;font-size:25px;color:white;text-decoration:none}
+@media(max-width:768px){.story{flex-direction:column}.story img,.story-content{width:100%}.values{grid-template-columns:1fr}.about-container{padding:30px}.about-hero h1{font-size:35px}}
+</style>
+
+<section class="about-hero">
+<h1>About Ozed Interiors</h1>
+</section>
+
+<div class="about-container">
+
+<div class="story reveal">
+
+<img src="assets/logo/file_000000002f0071fda675f425a93c1e10.png" alt="logo">
+
+<div class="story-content">
+
+<h2>Our Story</h2>
+
+<p>
+At Ozed Exclusive Interior Concepts, we believe that every space tells a story. We specialize in creating elegant, luxurious, and functional interiors that transform ordinary spaces into extraordinary experiences.
+
+Our commitment is not just to decorate spaces but to create environments that reflect personality, comfort, style, and excellence. From premium curtains and blinds to modern interior finishing, we bring creativity and craftsmanship together.
+
+We focus on quality, attention to detail, and customer satisfaction while delivering designs that stand out.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="values reveal">
+
+<div class="card">
+<i class="fas fa-gem"></i>
+<h3>Luxury</h3>
+<p>Premium quality with timeless elegance.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-lightbulb"></i>
+<h3>Creativity</h3>
+<p>Innovative designs tailored to your taste.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-handshake"></i>
+<h3>Trust</h3>
+<p>Building long-lasting relationships with clients.</p>
+</div>
+
+</div>
+
+</div>
+
+<a href="https://wa.me/2348147147493" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+window.addEventListener('scroll',()=>{
+let reveals=document.querySelectorAll('.reveal');
+reveals.forEach(reveal=>{
+let position=reveal.getBoundingClientRect().top;
+let screenPosition=window.innerHeight/1.2;
+if(position<screenPosition){reveal.classList.add('active');}
+});
+});
+</script>
+
+<footer>
+<div style="background:#000;margin-top:80px;padding:50px;border-top:1px solid rgba(255,255,255,.1);color:#ddd">
+<div style="max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px">
+<div>
+<h3 style="color:#d4af37">Ozed Interiors</h3>
+<p>Luxury interior designs crafted with elegance, creativity and comfort.</p>
+</div>
+<div>
+<h3 style="color:#d4af37">Quick Links</h3>
+<a href="index.html">Home</a><br>
+<a href="about.html">About</a><br>
+<a href="services.html">Services</a><br>
+<a href="shop.html">Shop</a>
+</div>
+<div>
+<h3 style="color:#d4af37">Contact</h3>
+<p>📞 08147147493</p>
+<p>📍 Owerri, Imo State</p>
+<p>✉ info@ozedinteriors.com</p>
+</div>
+<div>
+<h3 style="color:#d4af37">Follow Us</h3>
+<a href="https://www.facebook.com/share/1Bnqjpqzpd/">Facebook</a><br>
+<a href="https://www.instagram.com/ozedinteriors/">Instagram</a><br>
+<a href="https://wa.me/2348147147493">WhatsApp</a>
+</div>
+</div>
+<div style="text-align:center;margin-top:30px;color:#ddd">© 2026 Ozed Exclusive Interior Concepts | All Rights Reserved</div>
+</div>
+</footer>
+
+</body>
+</html>
